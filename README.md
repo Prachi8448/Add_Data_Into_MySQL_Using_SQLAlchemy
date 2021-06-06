@@ -7,6 +7,7 @@ from sqlalchemy import create_engine
 my_conn = create_engine("mysql+mysqldb://userid:password@localhost/database_name")
 
 try:
+
     query="INSERT INTO  `database_name`.`student` (`name` ,`class` ,`mark` ,`sex`)  VALUES(%s,%s,%s,%s)"
     
     my_data=[('Prachi','B.Tech',82,'Female'),
