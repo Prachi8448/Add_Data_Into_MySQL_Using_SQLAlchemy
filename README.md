@@ -9,7 +9,7 @@ my_conn = create_engine("mysql+mysqldb://userid:password@localhost/database_name
 try:
     query="INSERT INTO  `database_name`.`student` (`name` ,`class` ,`mark` ,`sex`)  VALUES(%s,%s,%s,%s)"
     
-    my_data=[('Prqchi','B.Tech',82,'Female'),
+    my_data=[('Prachi','B.Tech',82,'Female'),
     
             ('Akansha','B.Tech',88,'Female')]
             
